@@ -25,33 +25,31 @@ class Flames:
             for i in range(char_count):
                 #increasing the count on FLAMES by one until we reach 'S'
                 flames_counter += 1
-                print(flames_counter)
                 #Run this if loop to reset the counter to 'F' when it reach 'S'.
                 if flames_counter > len(f):
                     flames_counter = 1
-            print(f[flames_counter-1])
             #Remove the letter that meets the char_count number. Doing counter -1 to meet the python indexing which starts at '0'
             f.remove(f[flames_counter-1])
-
             flames_counter -= 1
-        f = str(f) # Need to make this as a string
-        print(f)
+            print(f)
         self.result(f)
     
     def result(self,char):
-        self.
-        if char == 'F':
+        if char[0] == 'F':
             print("The relationship between names is Friends")
-        elif char == 'L'
+        elif char[0] == 'L':
             print("The relationship between names is Love")
-        elif char == 'A'
+        elif char[0] == 'A':
             print("The relationship between names is Affection")
-        elif char == 'M'
+        elif char[0] == 'M':
             print("The relationship between names is Affection")
+        elif char[0] == 'E':
+            print("The relationship between names is Enemies")
+        elif char[0] == 'S':
+            print("The relationship between names is Siblings")
 
 
-your_name = "a"
-partner_name = "b"
+your_name = input('Enter your Name: ')
+partner_name = input('Enter your Partner Name: ')
 F = Flames()
 F.check_chars(your_name,partner_name)
-print("All is Well")
