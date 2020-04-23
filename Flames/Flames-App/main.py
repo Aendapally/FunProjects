@@ -39,10 +39,15 @@ class Flames:
         self.result(f)
     
     def result(self,char):
+        self.
         if char == 'F':
             print("The relationship between names is Friends")
-        else:
-            print("other")
+        elif char == 'L'
+            print("The relationship between names is Love")
+        elif char == 'A'
+            print("The relationship between names is Affection")
+        elif char == 'M'
+            print("The relationship between names is Affection")
 
 
 your_name = "a"
