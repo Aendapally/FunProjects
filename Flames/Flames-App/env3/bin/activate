@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/vijayakumaryarrampalli/Documents/Code/Flames-App/env3"
+VIRTUAL_ENV="/Users/vijayakumaryarrampalli/Documents/Code/FunProjects/Flames/Flames-App/env3"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
