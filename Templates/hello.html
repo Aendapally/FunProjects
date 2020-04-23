@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            // console.log("Hello World!");
+
+            // alert("Hello World!");
+
+            $('#first_button').click(function() {
+                // var name = $('#name').val();
+                // // alert("Hello " + name);
+                // $('#space').html("Hello " + name);
+                // $('#first_button').css("visibility", "hidden");
+                // $('#name').css("visibility", "hidden");
+
+                // $.get("http://localhost:5000/", function(data) {
+                //     alert(data);
+                // });
+
+                $.ajax({
+                    url: "http://127.0.0.1:5000/",
+                    type: "GET",
+                    crossDomain: true,
+                    dataType: "json",
+                    success: function(response) {
+                        alert(response.message);
+                    },
+                    error: function(xhr, status) {
+                        alert("error");
+                    }
+                });
+
+
+            });
+
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="space">
+
+    </div>
+    <input type="text" id="name" />
+
+    <button id="first_button">Test Button</button>
+
+
+
+
+
+
+
+</body>
+
+</html>
