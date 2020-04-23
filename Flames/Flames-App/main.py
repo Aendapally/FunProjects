@@ -54,3 +54,4 @@ your_name = "a"
 partner_name = "b"
 F = Flames()
 F.check_chars(your_name,partner_name)
+print("All is Well")
