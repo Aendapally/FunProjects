@@ -31,3 +31,6 @@ git push github test:beta
 
 #####Delete remote branch (pu) from github:#####
 git push github :pu
+
+refresh the remote branches:
+git remote update origin --prune
