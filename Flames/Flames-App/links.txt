@@ -1,1 +1,5 @@
 https://www.npmjs.com/package/jquery-ui
+https://getbootstrap.com/ - Twitter UI framework based on HTML, CSS and JS
+Just like pip in python jquery uses Bower or NPM
+as part of jquery their is $ 
+Jquery is build on javascript as flames is bulit on python

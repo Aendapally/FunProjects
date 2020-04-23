@@ -13,7 +13,7 @@ class Flames:
         chars = list1 + list2
         char_count = len(chars)
         print(char_count)
-        self.game(char_count)
+        return self.game(char_count)
 
     def game(self, char_count):
         f = list('FLAMES')
@@ -33,7 +33,8 @@ class Flames:
             flames_counter -= 1
             print(f)
         self.result(f)
-    
+        return(f[0])
+
     def result(self,char):
         if char[0] == 'F':
             print("The relationship between names is Friends")
@@ -49,8 +50,9 @@ class Flames:
             print("The relationship between names is Siblings")
 
 
-your_name = input('Enter your Name: ')
-partner_name = input('Enter your Partner Name: ')
-F = Flames()
-F.check_chars(your_name,partner_name)
-print('AllIsWell')
+# your_name = input('Enter your Name: ')
+# partner_name = input('Enter your Partner Name: ')
+# F = Flames()
+# check = F.check_chars(your_name,partner_name)
+# print(check)
+
