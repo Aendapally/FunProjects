@@ -6,7 +6,7 @@ class Flames:
         name2 = name2.lower()
         name2 = name2.replace(" ","")
         list2 = list(name2)
-        for l in list1:
+        for l in list1[:]:
             if l in list2:
                 list1.remove(l)
                 list2.remove(l)
